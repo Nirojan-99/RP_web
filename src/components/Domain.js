@@ -55,7 +55,7 @@ export default function Domain() {
     setValue(index);
   };
 
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
 
   return (
     <Box

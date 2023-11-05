@@ -6,11 +6,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
-import Typography from "@mui/material/Typography";
 import useWindowDimensions from "../Utils/dimention";
 import { Box } from "@mui/material";
 import { value } from "../store/SubmissionData";
@@ -18,13 +13,17 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import GroupsIcon from "@mui/icons-material/Groups";
 
 export default function Milestone() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
     <Box
       sx={{ minHeight: height, bgcolor: "#526D82" }}
       p={{ sm: 0.5, md: 2, lg: 4 }}
       id="Milestone"
     >
+      <div className="text-[#fff] font-bold text-3xl text-center font-[roboto] pt-10 ">
+        Milestone
+      </div>
+      <hr className=" border-[#fff] mt-2 mb-8"/>
       <Timeline position="alternate">
         {value.map((item, index) => {
           return (
@@ -40,7 +39,7 @@ export default function Milestone() {
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot sx={{ bgcolor: "#27374D" }}>
-                  {item.type == "viva" ? (
+                  {item.type === "viva" ? (
                     <GroupsIcon sx={{ color: "#299FB5" }} />
                   ) : (
                     <DescriptionIcon sx={{ color: "#299FB5" }} />

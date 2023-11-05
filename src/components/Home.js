@@ -1,10 +1,9 @@
 import React from "react";
-import home from "../assets/home.jpg";
 import { Box, Grid } from "@mui/material";
 import useWindowDimensions from "../Utils/dimention";
 
 export default function Home() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
     <Box sx={{ height: height }} id="Home">
       <div className="w-full h-full" id="home">

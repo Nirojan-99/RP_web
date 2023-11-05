@@ -5,7 +5,7 @@ import { Box, Grid } from "@mui/material";
 const tools = ["tool1", "tool2", "tool3", "tool4", "tool3", "tool3"];
 
 export default function Tools() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
     <Box
       sx={{ minHeight: height }}

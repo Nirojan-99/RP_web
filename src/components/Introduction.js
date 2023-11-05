@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import useWindowDimensions from "../Utils/dimention";
 
 export default function Introduction() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
     <Box sx={{ height: height, bgcolor: "#299FB5" }} id="Introduction">
       <div className="h-full flex-col flex flex-1 items-center justify-center lg:p-10 md:p-5 sm:p-2">

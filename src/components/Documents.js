@@ -8,24 +8,31 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { data } from "../store/DocumentData";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 export default function Documents() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
     <Box
       sx={{ minHeight: height, bgcolor: "#232D3F" }}
       id="Documents"
       p={{ xs: 0.5, md: 1, lg: 2 }}
     >
+       <div className="text-[#299FB5] font-bold text-3xl text-center font-[roboto] pt-14 ">
+        Documents
+      </div>
+      <hr className=" border-[#299FB5] mt-2 mb-8"/>
       <div className="md:m-10 m-3">
         {data.map((item, index) => {
           return (
-            <Accordion sx={{bgcolor:"transparent"}}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon sx={{color:"#fff"}}/>} sx={{bgcolor:"#526D82"}}>
-                <Typography sx={{color:"#fff"}}>{item.title}</Typography>
+            <Accordion sx={{ bgcolor: "transparent" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                sx={{ bgcolor: "#526D82" }}
+              >
+                <Typography sx={{ color: "#fff" }}>{item.title}</Typography>
               </AccordionSummary>
-              <AccordionDetails sx={{mt:2}}>
+              <AccordionDetails sx={{ mt: 2 }}>
                 <Grid
                   container
                   columnGap={3}
@@ -48,10 +55,11 @@ export default function Documents() {
                           </div>
                           <div>
                             <Button
-                            fullWidth
+                              fullWidth
                               variant="outlined"
                               startIcon={<FileDownloadIcon />}
-                              sx={{textTransform:"none"}}
+                              sx={{ textTransform: "none" }}
+                              href={doc?.path}
                             >
                               Download
                             </Button>

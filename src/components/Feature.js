@@ -7,14 +7,18 @@ import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 
 export default function Feature() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   return (
-    <Box sx={{ minHeight: height }} id="Features" p={{ xs: 0.5, md: 1, lg: 2 }}>
+    <Box sx={{ height: height }} id="Features" p={{ xs: 0.5, md: 1, lg: 2 }}>
+      <div className="text-[#fff] font-bold text-3xl text-center font-[roboto] mt-14 bg-[#299FB5] py-2 ">
+        What do we provide?
+      </div>
+      <hr className=" border-[#fff] mt-2 mb-8"/>
       <Grid
         container
         justifyContent={"center"}
         alignItems={{ xs: "stretch", md: "center" }}
-        sx={{ height: height, p: { xs: 0.5, md: 1, lg: 2 } }}
+        sx={{ height: "100%", p: { xs: 0.5, md: 1, lg: 2 } }}
         spacing={3}
         direction={{ xs: "column", md: "row" }}
       >
