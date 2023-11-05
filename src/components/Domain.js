@@ -2,17 +2,14 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { useTheme } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import useWindowDimensions from "../Utils/dimention";
 import Background from "../tabs/Background";
 import ResearchGap from "../tabs/ResearchGap";
 import ResearchObjectives from "../tabs/ResearchObjectives";
 import ResearchProblem from "../tabs/ResearchProblem";
-import { HighQuality } from "@mui/icons-material";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
