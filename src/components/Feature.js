@@ -9,7 +9,7 @@ import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 export default function Feature() {
   const { height } = useWindowDimensions();
   return (
-    <Box sx={{ height: height }} id="Features" p={{ xs: 0.5, md: 1, lg: 2 }}>
+    <Box sx={{ minHeight: height }} id="Features" p={{ xs: 0.5, md: 1, lg: 2 }}>
       <div className="text-[#fff] font-semibold text-2xl text-center font-[roboto] mt-14 bg-[#27374D] py-2 ">
         What do we provide?
       </div>
