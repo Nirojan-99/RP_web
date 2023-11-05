@@ -13,7 +13,7 @@ export default function Feature() {
       <div className="text-[#fff] font-semibold text-2xl text-center font-[roboto] mt-14 bg-[#27374D] py-2 ">
         What do we provide?
       </div>
-      <hr className=" border-[#fff] mt-2 mb-8"/>
+      <hr className=" border-[#fff] mt-2 mb-8" />
       <Grid
         container
         justifyContent={"center"}
@@ -23,7 +23,7 @@ export default function Feature() {
         direction={{ xs: "column", md: "row" }}
       >
         <Grid item md={2.7}>
-          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer">
+          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer py-4 rounded-md ">
             <div className="text-2xl font-bold mb-2 text-[#4477CE]">NER</div>
             <div>
               <PinIcon sx={{ color: "#fff", fontSize: 64 }} />
@@ -35,7 +35,7 @@ export default function Feature() {
           </div>
         </Grid>
         <Grid item md={2.7}>
-          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer">
+          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer py-4 rounded-md">
             <div className="text-2xl font-bold mb-2 text-[#4477CE]">OCR</div>
             <div>
               <ImageIcon sx={{ color: "#fff", fontSize: 64 }} />
@@ -47,7 +47,7 @@ export default function Feature() {
           </div>
         </Grid>
         <Grid item md={2.7}>
-          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer">
+          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer py-4 rounded-md">
             <div className="text-2xl font-bold mb-2 text-[#4477CE]">
               Sentiment Analysis
             </div>
@@ -60,7 +60,7 @@ export default function Feature() {
           </div>
         </Grid>
         <Grid item md={2.7}>
-          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer">
+          <div className="bg-[#27374D] p-2 shadow-md text-center hover:scale-105 transition-all cursor-pointer py-4 rounded-md">
             <div className="text-2xl font-bold mb-2 text-[#4477CE]">
               Word Prediction
             </div>

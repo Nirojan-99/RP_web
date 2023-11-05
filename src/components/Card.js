@@ -7,7 +7,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 export default function MediaCard(props) {
   return (
     <div className="bg-white shadow-md flex items-center flex-col p-3 rounded-md hover:scale-105 transition-all">
-      <img src={props.data.img} className="h-[240px] w-[240px] rounded-full" />
+      <img src={props.data.img} className="h-[240px] w-[240px] rounded-full shadow-lg" />
       <div className="flex flex-col items-center w-full mt-3">
         <div className="font-semibold text-xl ">{props.data.name}</div>
         <div className="font-sans text-[14px] font-semibold text-[#333]">
