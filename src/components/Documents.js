@@ -18,7 +18,7 @@ export default function Documents() {
       id="Documents"
       p={{ xs: 0.5, md: 1, lg: 2 }}
     >
-       <div className="text-[#299FB5] font-bold text-3xl text-center font-[roboto] pt-14 ">
+       <div className="text-[#299FB5] font-semibold text-2xl text-center font-[roboto] pt-14 ">
         Documents
       </div>
       <hr className=" border-[#299FB5] mt-2 mb-8"/>

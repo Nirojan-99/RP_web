@@ -7,6 +7,7 @@ import Milestone from "./components/Milestone";
 import Feature from "./components/Feature";
 import Documents from "./components/Documents";
 import Tools from "./components/Tools";
+import OurTeam from "./components/OurTeam";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <Feature />
       <Documents />
       <Tools />
+      <OurTeam/>
     </div>
   );
 }

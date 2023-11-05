@@ -63,7 +63,7 @@ export default function Domain() {
       p={{ sm: 0.5, md: 2, lg: 4 }}
       id="Domain"
     >
-      <div className="text-[#4477CE] font-bold text-3xl text-center font-[roboto] pt-10">
+      <div className="text-[#4477CE] font-semibold text-2xl text-center font-[roboto] pt-10">
         Our Domain
       </div>
       <hr className=" border-[#4477CE] mt-2"/>

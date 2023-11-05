@@ -20,7 +20,7 @@ export default function Milestone() {
       p={{ sm: 0.5, md: 2, lg: 4 }}
       id="Milestone"
     >
-      <div className="text-[#fff] font-bold text-3xl text-center font-[roboto] pt-10 ">
+      <div className="text-[#fff] font-semibold text-2xl text-center font-[roboto] pt-10 ">
         Milestone
       </div>
       <hr className=" border-[#fff] mt-2 mb-8"/>
